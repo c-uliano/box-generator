@@ -2,6 +2,8 @@ import './App.css';
 import Form from './components/Form';
 import React, {useState} from 'react';
 
+const [colorList, setColorList] = useState([]);
+
 function App() {
     return (
         <div className='w-50 m-auto pt-4'>

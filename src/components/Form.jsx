@@ -4,7 +4,9 @@ import styles from './Form.module.css';
 const Form = (props) => {
     // todo: this might be overdoing it, could be a simpler way to refactor this, but get it done first and work on that later
     const [color, setColor] = useState('');
-    const [colorList, setColorList] = useState([]);
+    // ! need to move this into the parent component and then add them in here via props
+    // const [colorList, setColorList] = useState([]);
+    const {colorList, setColorList} = props;
 
     // event handlers
     const onChangeHandler = (e) => {
@@ -44,4 +46,4 @@ const Form = (props) => {
     );
 }
 
-export default Form
+export default Form;
