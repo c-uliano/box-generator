@@ -1,25 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Form from './components/Form';
+import React, {useState} from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className='w-50 m-auto pt-4'>
+            <h1>Box Generator</h1>
+            <Form />
+        </div>
+    );
 }
 
 export default App;
