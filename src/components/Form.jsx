@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 
 const Form = (props) => {
     const [color, setColor] = useState('');
-    // ! need to move this into the parent component and then add them in here via props
-    // const [colorList, setColorList] = useState([]);
+
+    // ? 4/5 the state was set in Apps.js, passed into Form via props, and here they are as props, to use in functions exactly the same way as if they were created here
     const {colorList, setColorList} = props;
 
     // event handlers
